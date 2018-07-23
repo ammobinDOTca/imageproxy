@@ -12,7 +12,7 @@ FROM scratch
 
 WORKDIR /go/bin
 
-COPY --from=build /usr/share/zoneinfo /usr/share/zoneinfo
+#COPY --from=build /usr/share/zoneinfo /usr/share/zoneinfo
 COPY --from=build /etc/ssl/certs /etc/ssl/certs
 COPY --from=build /go/bin/imageproxy .
 
